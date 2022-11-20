@@ -1,4 +1,4 @@
-# Easy Cp
+# [Easy Cp](https://pypi.org/project/fastcp/)
 A Python Library that contains various functions to make Competitive Programming easy. 
 This Package includes pre-defined functions that are quite useful in Competitive Programming.
 
