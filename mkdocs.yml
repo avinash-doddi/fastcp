@@ -1,0 +1,7 @@
+site_name: fastcp
+site_url: https://github.com/avinash-doddi/fastcp
+nav:
+    - Home: index.md
+    - User Guide: userguide.md
+    - API: api_reference.md
+theme: readthedocs
