@@ -1,6 +1,7 @@
 # Fast Cp
 A Python Library that contains various functions to make Competitive Programming easy. 
 This Package includes pre-defined functions that are quite useful in Competitive Programming.
++ To View the Package -> [Click Here](https://pypi.org/project/fastcp/)
 
 ### Purpose of Package
 + The main purpose of this package is to provide various functions that are helpful for Competitive Programming.
