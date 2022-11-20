@@ -1,6 +1,6 @@
 ### Api Reference
 
-+ Collectios of easycp
++ Collectios of fastcp
     + Collections of arrays
         - [Unique](#unique)
         - [Subarr](#Subarr)

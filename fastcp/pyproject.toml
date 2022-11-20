@@ -1,28 +1,4 @@
-[tool.poetry]
-name = "easycp"
-version = "1.0.0"
-description = "A Python Library for Easy Competitive Coding. This Library contains all the necessary fuctions to make Competitive coding easier easy."
-authors = ["Doddi Avinash <avinashdoddi2001@gmail.com>"]
-readme = "README.md"
-license = "MIT License"
-homepage = "https://github.com/avinash-doddi/easycp"
-repository = "https://github.com/avinash-doddi/easycp"
-keywords = ["easycp", "Competitive Programming", "cp", "competitive programming", "trees", "strings", "arrays", "bit manupulations", "bit-manupulation"]
-classifiers= [
-            "License :: OSI Approved :: MIT",
-            "Intended Audience :: Any",
-            "Programming Language :: Python :: 3",
-            "Programming Language :: Python :: 3.6",
-            "Programming Language :: Python :: 3.8",
-            "Programming Language :: Python :: 3.9",
-            "Programming Language :: Python :: 3.10",
-            "Programming Language :: Python :: 3.11",
-            "Operating System :: OS Independent",
-        ]
-
-[tool.poetry.dependencies]
-python = "^3.11"
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'
+
