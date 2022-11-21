@@ -1,4 +1,4 @@
-Easy Cp
+Fast Cp
 =======
 
 A Python Library that contains various functions to make Competitive
@@ -14,7 +14,7 @@ Purpose of Package
 Features
 ~~~~~~~~
 
--  Collectios of easycp
+-  Collectios of fastcp
 
    -  Collections of arrays
 
@@ -73,20 +73,20 @@ Installation
 
 .. code:: bash
 
-   pip install easycp
+   pip install fastcp
 
 Usage
 ~~~~~
 
-importing all sub-packages from easycp
+importing all sub-packages from fastcp
 
 .. code:: python
 
-   >>> from easycp import *
+   >>> from fastcp import *
    >>> subsequences = arrays.Subseq([1,2,3,4,5])
 
-   importing a single sub-package from easycp
-   >>> from easycp import bitMan
+   importing a single sub-package from fastcp
+   >>> from fastcp import bitMan
    >>> toggled_number = bitMan.Toggle(123)
 
 Examples
@@ -94,26 +94,33 @@ Examples
 
 .. code:: python
 
-   >>> from easycp import arrays
+   >>> from fastcp import arrays
+
    >>> arrays.Freq([1,1,2,2,2,3])
    {1:2, 2:3, 3:1}
 
-   >>> from easycp import strings
+   >>> from fastcp import strings
+
    >>> strings.Substr("python")
    ['python', 'ython', 'thon', 'hon', 'on', 'n']
+
    >>> strings.Subseq("Pypi")
    ['Pypi', 'Pyp', 'Pyi', 'Py', 'Ppi', 'Pp', 'Pi', 'P', 'ypi', 'yp', 'yi', 'y', 'pi', 'p', 'i', '']
 
-   >>> from easycp import trees
+   >>> from fastcp import trees
    >>> root = trees.Create(10)
    >>> root.left = Create(5)
    >>> root.right = Create(20)
+
    >>> trees.Inorder(root)
    [5, 10, 20]
+
    >>> trees.Preorder(root)
    [10, 5, 20]
+
    >>> trees.Postorder(root)
    [5, 20, 10]
+   
    >>> trees.Levelorder(root)
    [[10], [5, 20]]
 
