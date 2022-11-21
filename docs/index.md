@@ -94,6 +94,3 @@ importing a single sub-package from fastcp
 >>> trees.Levelorder(root)
 [[10], [5, 20]]
 ```
-
-### Author
-Avinash Doddi [https://github.com/avinash-doddi]

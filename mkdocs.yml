@@ -4,4 +4,6 @@ nav:
     - Home: index.md
     - User Guide: userguide.md
     - API: api_reference.md
+    - Source: https://github.com/avinash-doddi/fastcp
+    - Package: https://pypi.org/project/fastcp/
 theme: readthedocs
