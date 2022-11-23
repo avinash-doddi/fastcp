@@ -3,6 +3,6 @@ from .bitMan import *;
 from .trees import *;
 from .strings import *;
 from .search import *;
-from .Math import *;
+from .math import *;
 from .sorting import *;
-from .collection import *;
+from .collections import *;
