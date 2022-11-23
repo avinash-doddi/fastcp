@@ -1,13 +1,11 @@
-from math import *;
-from itertools import *;
-from math import cbrt as _cbrt
-
 def Sieve(value):
-    """A function that generates sieve of erathosthenes till value
-       Example: math.sieve(10)
-                returns [0,0,1,1,0,1,0,1,0,0,0] 
+    """
+    A function that generates sieve of erathosthenes till value
+       Example: 
+                >>> math.sieve(10)
+                [0,0,1,1,0,1,0,1,0,0,0] 
                 0 -> not prime and 1 -> prime
-
+                
     Args:
         value (int): Number to generate sieve of erathosthenes
     Returns:
@@ -38,15 +36,6 @@ def IsPrime(value):
         if value % i == 0: return False;
     return True;
 
-def Cbrt(Number): 
-    """A function to get Cube Root of a Number
-    Args:
-        value (int): A number to get Cube Root
-    Returns:
-        float: returns Cube Root of the Number
-    """
-    return _cbrt(Number)
-
 def Product(arr):
     """ A funtion that returns product of all elements of array
     Args:
@@ -60,3 +49,5 @@ def Product(arr):
         for val in arr: i *= val;
         return i;
     return 0;
+
+from math import *;

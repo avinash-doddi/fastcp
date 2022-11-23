@@ -44,7 +44,6 @@ Features
 
    -  Collections of math
 
-      -  Cbrt
       -  Product
       -  Sieve
       -  IsPrime
@@ -54,6 +53,16 @@ Features
       -  Find
       -  LowerBound
       -  UpperBound
+
+   -  Collections of sorting
+
+        - Sort
+        - SortDict
+        - SortDictValues
+
+    - Collections of collections
+
+        - MultMap
 
    -  Collections of trees
 
@@ -100,14 +109,46 @@ Examples
    {1:2, 2:3, 3:1}
 
    >>> from fastcp import strings
-
    >>> strings.Substr("python")
    ['python', 'ython', 'thon', 'hon', 'on', 'n']
 
    >>> strings.Subseq("Pypi")
    ['Pypi', 'Pyp', 'Pyi', 'Py', 'Ppi', 'Pp', 'Pi', 'P', 'ypi', 'yp', 'yi', 'y', 'pi', 'p', 'i', '']
 
+   - New Libraries: (v.1.0.2)
+
+      - sorting
+      - collections
+
+   >>> from fastcp import sorting
+   >>> # Sort function at O(N) Complexity
+
+   >>> dict = {10: 1, 8: 2, 1: 3, 4: 4}
+
+   >>> print(sorting.SortDict(dict))
+   {1: 3, 4: 4, 8: 2, 10: 1}
+
+   >>> print(sorting.SortDict(dict, True))
+   {10: 1, 8: 2, 4: 4, 1: 3}
+
+   >>> from fastcp import collections
+
+   >>> d = collections.MultMap(0)
+   >>> # creates a Multi-Dictionary with default value as Int (0);
+   >>> d[0][0]
+   0
+
+   >>> d = collections.MultMap([])
+   >>> # creates a Multi-Dictionary with default value as List ([]);
+   >>> d[0][0]
+   []
+   >>> d[0][0].append(20)
+   >>> d[0][0]
+   [20]
+
+
    >>> from fastcp import trees
+
    >>> root = trees.Create(10)
    >>> root.left = Create(5)
    >>> root.right = Create(20)

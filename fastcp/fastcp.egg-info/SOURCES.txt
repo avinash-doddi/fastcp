@@ -6,8 +6,10 @@ setup.py
 fastcp/fastcp/__init__.py
 fastcp/fastcp/arrays.py
 fastcp/fastcp/bitMan.py
+fastcp/fastcp/collections.py
 fastcp/fastcp/math.py
 fastcp/fastcp/search.py
+fastcp/fastcp/sorting.py
 fastcp/fastcp/strings.py
 fastcp/fastcp/trees.py
 fastcp/fastcp.egg-info/PKG-INFO

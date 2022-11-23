@@ -22,7 +22,6 @@
         - [OctToDecimal](#OctToDecimal)
         - [HexToDecimal](#HexToDecimal)
     + Collections of math
-        - [Cbrt](#Cbrt)
         - [Product](#Product)
         - [Sieve](#Sieve)
         - [IsPrime](#IsPrime)
@@ -30,6 +29,12 @@
         - [Find](#Find)
         - [LowerBound](#LowerBound)
         - [UpperBound](#UpperBound)
+    + Collections of sorting
+        - [Sort](#Sort)
+        - [SortDict](#SortDict)
+        - [SortDictValues](#SortDictValues)
+    + Collections of collections
+        - [MultMap](#MultMap)
     + Collections of trees
         - [Create](#Create)
         - [Inorder](#Inorder)
