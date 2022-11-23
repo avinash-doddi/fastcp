@@ -1,3 +1,6 @@
+updating package at pypi test: python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose
+updating package at pypi:  python -m twine upload dist/*
+
 Fast Cp
 =======
 
@@ -161,7 +164,7 @@ Examples
 
    >>> trees.Postorder(root)
    [5, 20, 10]
-   
+
    >>> trees.Levelorder(root)
    [[10], [5, 20]]
 
