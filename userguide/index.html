@@ -85,7 +85,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h3 id="usage">Usage</h3>
+                <h3 id="installation">Installation</h3>
+<pre><code class="language-bash">pip install fastcp
+</code></pre>
+<h3 id="usage">Usage</h3>
 <p>importing all sub-packages from fastcp</p>
 <pre><code class="language-python">
 &gt;&gt;&gt; from fastcp import *
@@ -97,21 +100,71 @@ importing a single sub-package from fastcp
 &gt;&gt;&gt; toggled_number = bitMan.Toggle(123)
 </code></pre>
 <h3 id="examples">Examples</h3>
-<p>```python</p>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>from fastcp import arrays</p>
-<p>arrays.Freq([1,1,2,2,2,3])
-{1:2, 2:3, 3:1}</p>
-<p>from fastcp import strings</p>
-<p>strings.Substr("python")
-['python', 'ython', 'thon', 'hon', 'on', 'n']</p>
-<p>strings.Subseq("Pypi")
-['Pypi', 'Pyp', 'Pyi', 'Py', 'Ppi', 'Pp', 'Pi', 'P', 'ypi', 'yp', 'yi', 'y', 'pi', 'p', 'i', '']</p>
-</blockquote>
-</blockquote>
-</blockquote>
+<pre><code class="language-python">
+&gt;&gt;&gt; from fastcp import arrays
+
+&gt;&gt;&gt; arrays.Freq([1,1,2,2,2,3])
+{1:2, 2:3, 3:1}
+</code></pre>
+<pre><code class="language-python">&gt;&gt;&gt; from fastcp import strings
+
+&gt;&gt;&gt; strings.Substr(&quot;python&quot;)
+['python', 'ython', 'thon', 'hon', 'on', 'n']
+
+&gt;&gt;&gt; strings.Subseq(&quot;Pypi&quot;)
+['Pypi', 'Pyp', 'Pyi', 'Py', 'Ppi', 'Pp', 'Pi', 'P', 'ypi', 'yp', 'yi', 'y', 'pi', 'p', 'i', '']
+</code></pre>
+<ul>
+<li>New Libraries: (v.1.0.2)<ul>
+<li>sorting</li>
+<li>collections</li>
+</ul>
+</li>
+</ul>
+<pre><code class="language-python">
+&gt;&gt;&gt; from fastcp import sorting
+&gt;&gt;&gt; # Sort function at O(N) Complexity
+
+&gt;&gt;&gt; dict = {10: 1, 8: 2, 1: 3, 4: 4}
+
+&gt;&gt;&gt; print(sorting.SortDict(dict))
+{1: 3, 4: 4, 8: 2, 10: 1}
+
+&gt;&gt;&gt; print(sorting.SortDict(dict, True))
+{10: 1, 8: 2, 4: 4, 1: 3}
+
+
+&gt;&gt;&gt; from fastcp import collections
+
+&gt;&gt;&gt; d = collections.MultMap(0)
+&gt;&gt;&gt; # creates a Multi-Dictionary with default value as Int (0);
+&gt;&gt;&gt; d[0][0]
+0
+
+&gt;&gt;&gt; d = collections.MultMap([])
+&gt;&gt;&gt; # creates a Multi-Dictionary with default value as List ([]);
+&gt;&gt;&gt; d[0][0]
+[]
+&gt;&gt;&gt; d[0][0].append(20)
+&gt;&gt;&gt; d[0][0]
+[20]
+
+</code></pre>
+<pre><code class="language-python">&gt;&gt;&gt; from fastcp import trees
+&gt;&gt;&gt; root = trees.Create(10)
+&gt;&gt;&gt; root.left = Create(5)
+&gt;&gt;&gt; root.right = Create(20)
+&gt;&gt;&gt; trees.Inorder(root)
+[5, 10, 20]
+&gt;&gt;&gt; trees.Preorder(root)
+[10, 5, 20]
+&gt;&gt;&gt; trees.Postorder(root)
+[5, 20, 10]
+&gt;&gt;&gt; trees.Levelorder(root)
+[[10], [5, 20]]
+</code></pre>
+<h3 id="author">Author</h3>
+<p>Avinash Doddi [https://github.com/avinash-doddi]</p>
               
             </div>
           </div><footer>
