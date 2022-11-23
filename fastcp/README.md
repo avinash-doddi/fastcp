@@ -33,6 +33,7 @@ This Package includes pre-defined functions that are quite useful in Competitive
         - Product
         - Sieve
         - IsPrime
+        + Along with all functions in python 3.11.0 math library
     + Collections of search
         - Find
         - LowerBound
@@ -43,6 +44,7 @@ This Package includes pre-defined functions that are quite useful in Competitive
         - SortDictValues
     + Collections of collections
         - MultMap
+        + Along with all functions in python 3.11.0 collectons library
     + Collections of trees
         - Create
         - Inorder
