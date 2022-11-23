@@ -25,6 +25,7 @@
         - [Product](#Product)
         - [Sieve](#Sieve)
         - [IsPrime](#IsPrime)
+        + Along with all functions in python 3.11.0 [math](#https://docs.python.org/3/library/math.html) library
     + Collections of search
         - [Find](#Find)
         - [LowerBound](#LowerBound)
@@ -35,6 +36,7 @@
         - [SortDictValues](#SortDictValues)
     + Collections of collections
         - [MultMap](#MultMap)
+        + Along with all functions in python 3.11.0 [collections](#https://docs.python.org/3/library/collections.html) library
     + Collections of trees
         - [Create](#Create)
         - [Inorder](#Inorder)
