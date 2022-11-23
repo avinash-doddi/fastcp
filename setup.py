@@ -5,7 +5,7 @@ with open("README.md", "r", encoding = "utf-8") as fh:
 
 setuptools.setup(
     name = "fastcp",
-    version = "1.0.2",
+    version = "1.0.3",
     author = "Avinash Doddi",
     author_email = "avinashdoddi2001@gmail.com",
     description = "A Python Package for Competitive Programming",
