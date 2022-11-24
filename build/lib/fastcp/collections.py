@@ -1,5 +1,19 @@
-from collections import defaultdict as _maps
+from collections import *;
+"""
+Description:
 
+    Functions in this Library:
+    - Multimap (unique to fastcp package)
+    - defaultdict
+    - OrderedDict
+    - namedtuple
+    - deque
+    - ChainMap
+    - Counter
+    - UserDict
+    - UserList
+    - UserString
+"""
 def Multimap(default):
     """
     This Function returns a Multimap (i.e Multi-DefaultDict) 
@@ -23,8 +37,5 @@ def Multimap(default):
         >>> dictionary[0][0]
         []
     """
-    return _maps(lambda: _maps(type(default)));
-
-from collections import *;
-
+    return defaultdict(lambda: defaultdict(type(default)));
 

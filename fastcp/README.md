@@ -66,7 +66,7 @@ importing all sub-packages from fastcp
 ```python
 
 >>> from fastcp import *
->>> subsequences = arrays.Subseq([1,2,3,4,5])
+>>> subsequences = Subseq([1,2,3,4,5])
 
 importing a single sub-package from fastcp
 
@@ -85,12 +85,12 @@ importing a single sub-package from fastcp
 ```
 
 ```python
->>> from fastcp import strings
+>>> from fastcp import *
 
->>> strings.Substr("python")
+>>> Substr("python")
 ['python', 'ython', 'thon', 'hon', 'on', 'n']
 
->>> strings.Subseq("Pypi")
+>>> Subseq("Pypi")
 ['Pypi', 'Pyp', 'Pyi', 'Py', 'Ppi', 'Pp', 'Pi', 'P', 'ypi', 'yp', 'yi', 'y', 'pi', 'p', 'i', '']
 ```
 + New Libraries: (v.1.0.2)
@@ -111,20 +111,23 @@ importing a single sub-package from fastcp
 {10: 1, 8: 2, 4: 4, 1: 3}
 
 
->>> from fastcp import collections
+>>> from fastcp import *
 
->>> d = collections.MultMap(0)
+>>> d = MultMap(0)
 >>> # creates a Multi-Dictionary with default value as Int (0);
 >>> d[0][0]
 0
 
->>> d = collections.MultMap([])
+>>> d = MultMap([])
 >>> # creates a Multi-Dictionary with default value as List ([]);
 >>> d[0][0]
 []
 >>> d[0][0].append(20)
 >>> d[0][0]
 [20]
+>>> d = defaultdict(int)
+>>> d[0]
+0
 
 ```
 

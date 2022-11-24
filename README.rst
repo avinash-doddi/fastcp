@@ -1,8 +1,9 @@
+Fast Cp
+=======
+creating build and dist: python setup.py sdist bdist_wheel
 updating package at pypi test: python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose
 updating package at pypi:  python -m twine upload dist/*
 
-Fast Cp
-=======
 
 A Python Library that contains various functions to make Competitive
 Programming easy. This Package includes pre-defined functions that are

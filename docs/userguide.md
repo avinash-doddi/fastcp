@@ -8,7 +8,7 @@ importing all sub-packages from fastcp
 ```python
 
 >>> from fastcp import *
->>> subsequences = arrays.Subseq([1,2,3,4,5])
+>>> subsequences = Subseq([1,2,3,4,5])
 
 importing a single sub-package from fastcp
 
