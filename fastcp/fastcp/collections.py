@@ -1,19 +1,39 @@
 from collections import *;
-"""
-Description:
 
-    Functions in this Library:
-    - Multimap (unique to fastcp package)
-    - defaultdict
-    - OrderedDict
-    - namedtuple
-    - deque
-    - ChainMap
-    - Counter
-    - UserDict
-    - UserList
-    - UserString
-"""
+
+def info():
+    """
+    Description:
+
+        Functions in this Library:
+        - Multimap (unique to fastcp package)
+        - defaultdict
+        - OrderedDict
+        - namedtuple
+        - deque
+        - ChainMap
+        - Counter
+        - UserDict
+        - UserList
+        - UserString
+    """
+    print("""
+    Description:
+
+        Functions in this Library:
+        - Multimap (unique to fastcp package)
+        - defaultdict
+        - OrderedDict
+        - namedtuple
+        - deque
+        - ChainMap
+        - Counter
+        - UserDict
+        - UserList
+        - UserString
+    """)
+    
+    
 def Multimap(default):
     """
     This Function returns a Multimap (i.e Multi-DefaultDict) 

@@ -43,7 +43,7 @@ def Substr(string):
         ref = ''
         for j in range(i, n):
             ref += string[j];
-        substr.append(ref);
+            substr.append(ref);
     del ref;
     return substr;
 
