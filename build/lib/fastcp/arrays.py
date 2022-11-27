@@ -66,6 +66,6 @@ def Subarr(arr):
         ref = []
         for j in range(i, n):
             ref.append(arr[j]);
-        substr.append(ref);
+            substr.append(ref[:]);
     del ref;
     return substr;
