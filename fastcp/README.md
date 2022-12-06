@@ -51,6 +51,8 @@ This Package includes pre-defined functions that are quite useful in Competitive
         - Preorder
         - Postorder
         - Levelorder
+        - Search
+        - NodeSum
 
 ### Getting Started
 This package can be found on PyPi. Hence you can install it using pip

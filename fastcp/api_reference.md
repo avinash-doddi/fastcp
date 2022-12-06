@@ -43,5 +43,7 @@
         - [Preorder](#Preorder)
         - [Postorder](#Postorder)
         - [Levelorder](#Levelorder)
+        - [Search](#Search)
+        - [NodeSum](#NodeSum)
 
 

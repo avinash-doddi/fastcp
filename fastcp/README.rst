@@ -1,5 +1,9 @@
 Fast Cp
 =======
+creating build and dist: python setup.py sdist bdist_wheel
+updating package at pypi test: python -m twine upload --repository-url https://test.pypi.org/legacy/ dist/* --verbose
+updating package at pypi:  python -m twine upload dist/*
+
 
 A Python Library that contains various functions to make Competitive
 Programming easy. This Package includes pre-defined functions that are
@@ -71,6 +75,8 @@ Features
       -  Preorder
       -  Postorder
       -  Levelorder
+      -  Search
+      -  NodeSum
 
 Getting Started
 ~~~~~~~~~~~~~~~
@@ -161,7 +167,7 @@ Examples
 
    >>> trees.Postorder(root)
    [5, 20, 10]
-   
+
    >>> trees.Levelorder(root)
    [[10], [5, 20]]
 

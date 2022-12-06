@@ -75,6 +75,8 @@ Features
       -  Preorder
       -  Postorder
       -  Levelorder
+      -  Search
+      -  NodeSum
 
 Getting Started
 ~~~~~~~~~~~~~~~

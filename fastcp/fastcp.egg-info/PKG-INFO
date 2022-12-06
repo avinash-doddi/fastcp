@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: fastcp
-Version: 1.0.5
+Version: 1.0.5.1
 Summary: A Python Package for Competitive Programming
 Home-page: https://github.com/avinash-doddi/fastcp.git
 Author: Avinash Doddi
@@ -66,6 +66,8 @@ This Package includes pre-defined functions that are quite useful in Competitive
         - Preorder
         - Postorder
         - Levelorder
+        - Search
+        - NodeSum
 
 ### Getting Started
 This package can be found on PyPi. Hence you can install it using pip
