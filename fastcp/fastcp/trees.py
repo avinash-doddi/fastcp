@@ -12,7 +12,7 @@
         root.left = TreeNode(5);
         root.right = TreeNode(20);
 """
-#from collections import deque as _deque;
+from collections import deque as _deque;
 
 class TreeNode:
     def __init__(self, val, left = None, right = None) -> None:
