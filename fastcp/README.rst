@@ -60,13 +60,23 @@ Features
 
    -  Collections of sorting
 
-        - Sort
-        - SortDict
-        - SortDictValues
+      - Sort
+      - SortDict
+      - SortDictValues
 
-    - Collections of collections
+   - Collections of collections
 
-        - MultMap
+      - MultMap
+
+   - Collections of dataStructures
+
+      - minHeap
+      - maxHeap
+      - PriorityQueue
+      - SimpleQueue
+      - queue
+      - Stack
+      + Along with all functions in python 3.11.0 [Queues](https://docs.python.org/3/library/queue.html) library
 
    -  Collections of trees
 
@@ -151,6 +161,31 @@ Examples
    >>> d[0][0].append(20)
    >>> d[0][0]
    [20]
+
+   >>> from fastcp import dataStructures as ds 
+
+   >>> d = ds.maxHeap()
+   >>> # creates a maxHeap
+   >>> d.put(20)
+   >>> d.put(50)
+   >>> d.get()
+   50 # returns the max value in heap
+   >>> d.size()
+   1  # since 50 is removed from heap
+
+   >>> s = ds.Stack()
+   # create a stack data structure
+   >>> s.push(10)
+   >>> s.push(20)
+   >>> s.size()
+   2
+   >>> s.pop()
+   20
+   >>> s.pop()
+   10
+   >>> s.pop()
+   None
+
 
 
    >>> from fastcp import trees

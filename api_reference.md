@@ -37,6 +37,14 @@
     + Collections of collections
         - [MultMap](#MultMap)
         + Along with all functions in python 3.11.0 [collections](#https://docs.python.org/3/library/collections.html) library
+    + Collections of dataStructures
+        - [minHeap](#minHeap)
+        - [maxHeap](#maxHeap)
+        - [PriorityQueue](#PriorityQueue)
+        - [SimpleQueue](#SimpleQueue)
+        - [Stack](#Stack)
+        - [queue](#queue)
+        + Along with all functions in python 3.11.0[Queues](https://docs.python.org/3/library/queue.html) library
     + Collections of trees
         - [Create](#Create)
         - [Inorder](#Inorder)
@@ -86,6 +94,14 @@
     + Collections of collections
         - [MultMap](#MultMap)
         + Along with all functions in python 3.11.0 [collections](#https://docs.python.org/3/library/collections.html) library
+    + Collections of dataStructures
+        - [minHeap](#minHeap)
+        - [maxHeap](#maxHeap)
+        - [PriorityQueue](#PriorityQueue)
+        - [SimpleQueue](#SimpleQueue)
+        - [Stack](#Stack)
+        - [queue](#queue)
+        + Along with all functions in python 3.11.0[Queues](https://docs.python.org/3/library/queue.html) library
     + Collections of trees
         - [Create](#Create)
         - [Inorder](#Inorder)

@@ -45,6 +45,14 @@ This Package includes pre-defined functions that are quite useful in Competitive
     + Collections of collections
         - MultMap
         + Along with all functions in python 3.11.0 [collections](https://docs.python.org/3/library/collections.html) library
+    + Collections of dataStructures
+        - minHeap
+        - maxHeap
+        - PriorityQueue
+        - SimpleQueue
+        - queue
+        - Stack
+        + Along with all functions in python 3.11.0 [Queues](https://docs.python.org/3/library/queue.html) library
     + Collections of trees
         - Create
         - Inorder
@@ -132,6 +140,43 @@ importing a single sub-package from fastcp
 0
 
 ```
+
+
+``` python
+
+>>> from fastcp import dataStructures as ds 
+>>> d = ds.maxHeap()
+>>> # creates a maxHeap object (d)
+>>> d.put(20)
+>>> d.put(50)
+>>> d.get()
+50 # returns the max value in heap
+>>> d.size()
+1  # since 50 is removed from heap
+
+>>> s = ds.Stack()
+# create a stack data structure
+>>> s.push(10)
+>>> s.push(20)
+>>> s.size()
+2
+>>> s.pop()
+20
+>>> s.pop()
+10
+>>> s.pop()
+None
+
+>>> d = ds.minHeap()
+>>> # creates a minHeap object (d)
+>>> d.put(20)
+>>> d.put(50)
+>>> d.get()
+20 # returns the min value in heap
+>>> d.size()
+1  # since 20 is removed from heap
+```
+
 
 ```python
 >>> from fastcp import trees
