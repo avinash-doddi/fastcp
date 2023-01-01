@@ -106,18 +106,22 @@ importing a single sub-package from fastcp
 &gt;&gt;&gt; arrays.Freq([1,1,2,2,2,3])
 {1:2, 2:3, 3:1}
 </code></pre>
-<pre><code class="language-python">&gt;&gt;&gt; from fastcp import strings
+<pre><code class="language-python">&gt;&gt;&gt; from fastcp import *
 
-&gt;&gt;&gt; strings.Substr(&quot;python&quot;)
+&gt;&gt;&gt; Substr(&quot;python&quot;)
 ['python', 'ython', 'thon', 'hon', 'on', 'n']
 
-&gt;&gt;&gt; strings.Subseq(&quot;Pypi&quot;)
+&gt;&gt;&gt; Subseq(&quot;Pypi&quot;)
 ['Pypi', 'Pyp', 'Pyi', 'Py', 'Ppi', 'Pp', 'Pi', 'P', 'ypi', 'yp', 'yi', 'y', 'pi', 'p', 'i', '']
 </code></pre>
 <ul>
 <li>New Libraries: (v.1.0.2)<ul>
 <li>sorting</li>
 <li>collections</li>
+</ul>
+</li>
+<li>New Library: (v.1.0.6.1)<ul>
+<li>dataStructures</li>
 </ul>
 </li>
 </ul>
@@ -134,21 +138,56 @@ importing a single sub-package from fastcp
 {10: 1, 8: 2, 4: 4, 1: 3}
 
 
-&gt;&gt;&gt; from fastcp import collections
+&gt;&gt;&gt; from fastcp import *
 
-&gt;&gt;&gt; d = collections.MultMap(0)
+&gt;&gt;&gt; d = MultMap(0)
 &gt;&gt;&gt; # creates a Multi-Dictionary with default value as Int (0);
 &gt;&gt;&gt; d[0][0]
 0
 
-&gt;&gt;&gt; d = collections.MultMap([])
+&gt;&gt;&gt; d = MultMap([])
 &gt;&gt;&gt; # creates a Multi-Dictionary with default value as List ([]);
 &gt;&gt;&gt; d[0][0]
 []
 &gt;&gt;&gt; d[0][0].append(20)
 &gt;&gt;&gt; d[0][0]
 [20]
+&gt;&gt;&gt; d = defaultdict(int)
+&gt;&gt;&gt; d[0]
+0
+</code></pre>
+<pre><code class="language-python">
+&gt;&gt;&gt; from fastcp import dataStructures as ds 
+&gt;&gt;&gt; d = ds.maxHeap()
+&gt;&gt;&gt; # creates a maxHeap object (d)
+&gt;&gt;&gt; d.put(20)
+&gt;&gt;&gt; d.put(50)
+&gt;&gt;&gt; d.get()
+50 # returns the max value in heap
+&gt;&gt;&gt; d.size()
+1  # since 50 is removed from heap
 
+&gt;&gt;&gt; s = ds.Stack()
+# create a stack data structure
+&gt;&gt;&gt; s.push(10)
+&gt;&gt;&gt; s.push(20)
+&gt;&gt;&gt; s.size()
+2
+&gt;&gt;&gt; s.pop()
+20
+&gt;&gt;&gt; s.pop()
+10
+&gt;&gt;&gt; s.pop()
+None
+
+&gt;&gt;&gt; d = ds.minHeap()
+&gt;&gt;&gt; # creates a minHeap object (d)
+&gt;&gt;&gt; d.put(20)
+&gt;&gt;&gt; d.put(50)
+&gt;&gt;&gt; d.get()
+20 # returns the min value in heap
+&gt;&gt;&gt; d.size()
+1  # since 20 is removed from heap
 </code></pre>
 <pre><code class="language-python">&gt;&gt;&gt; from fastcp import trees
 &gt;&gt;&gt; root = trees.Create(10)
